@@ -656,7 +656,7 @@
   }
 }
 html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -673,10 +673,14 @@ time, mark, audio, video {
   border: 0;
   font-size: 100%;
   vertical-align: baseline;
-  font-family: "游明朝" , "Yu Mincho" ,"ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",serif;
+  font-family: "Sawarabi Gothic", "游明朝" , "Yu Mincho" ,"ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",serif;
   font-size: 15px;
   color: #212121;
   line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Sawarabi Mincho", "游明朝" , "Yu Mincho" ,"ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",serif;
 }
 
 html {

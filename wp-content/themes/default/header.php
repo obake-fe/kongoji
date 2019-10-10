@@ -25,6 +25,8 @@ endif;
   <title><?php echo $title;?></title>
   <meta name="description" content="<?php echo $description;?>">
   <meta name="keywords" content="金剛寺,北海道,空知,樺戸,浦臼,岩見沢,砂川,滝川,札幌,旭川,真言宗,高野山,高野山真言宗,樺戸山金剛寺,厄除け,厄払い,護摩,護摩祈祷,不動護摩,星供,年始祈祷,祈祷祈願,祈祷,祈願,お祓い,家内安全,身体堅固,交通安全,安産祈願,開運厄除,商売繁盛,学業成就,合格祈願,心願成就,良縁吉祥,お寺,寺,寺院,供養,先祖供養,永代供養,水子供養,灯籠流し,葬儀,法事,仏事,七五三祈祷,車お祓い,御詠歌,宗教舞踊,寺子屋,新四国八十八ヶ所,鶴沼">
+  <link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/style.css">
   <link rel="stylesheet" href="/assets/css/jquery.bxslider.css">
   <link rel="stylesheet" href="/assets/css/lightbox.css">
