@@ -1170,6 +1170,47 @@ img {
   width: 100%;
 }
 
+
+/* topヘッダー */
+body#top{
+  position: relative;
+}
+#top .header{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+#top .header__sns{
+  top: 26px;
+}
+#top .bx-wrapper{
+  min-height: 420px;
+}
+#top .bx-wrapper img{
+  height: 100%;
+}
+#top .keyvisual a{
+  height: 420px;
+}
+#top .gnavi__item{
+  border: none;
+}
+#top .gnavi__item.top{
+  display: none;
+}
+.gnavi__item.topImg{
+  width: 44px;
+  height: 294px;
+  background: url(http://kongoji.local/wp-content/uploads/2019/10/top_mv_logo_PC.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#top .gnavi__block{
+  align-items: flex-start;
+}
+
 .news {
   overflow: hidden;
   background-color: #fbfaf5;

@@ -91,6 +91,9 @@ endif;
             <?php endforeach ; } ?>
           </ul>
         </li>
+        <?php if (isset($mypagename) && $mypagename == "top") { ?> 
+          <li class="gnavi__item topImg"></li>
+        <?php } ?> 
         <li class="gnavi__item taiken">体験
           <ul class="child">
             <?php if(isset($gnavis["taiken"])) { foreach ($gnavis["taiken"] as $gnavi) : ?>
