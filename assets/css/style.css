@@ -2315,6 +2315,7 @@ a.top__form__link {
     font-size: 14px;
     line-height: 1.5;
     margin-bottom: 10px;
+    width: auto;
   }
   .top__form__linkWrap{
     justify-content: flex-end;
