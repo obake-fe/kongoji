@@ -46,9 +46,6 @@ endif;
 
 <header class="header">
   <div class="header__top">
-    <div class="header__logo">
-      <a href="/"><img src="/assets/img/sp/logo_header.png" alt="樺戸山 金剛寺 | 北海道の高野山真言宗のお寺 先祖供養、護摩祈祷"></a>
-    </div>
 
     <div class="header__sns">
         <a href="https://www.facebook.com/kongohji/" target="_blank"><img src="/assets/img/sp/icon_fb.png" alt=""></a>
@@ -56,17 +53,11 @@ endif;
         <a href="https://www.youtube.com/channel/UCMU20xzRX5SjMi5d_nXMU_Q" target="_blank"><img src="/assets/img/top/icon_yt.png" alt=""></a>
     </div>
 
-    <div class="header__text">
-      <ul>
-        <li class="header__text-item02"><a href="/access.html">交通案内</a></li>
-        <li class="header__text-item03"><a href="/contact.html">お問い合わせ</a></li>
-      </ul>
-    </div>
   </div>
   <nav class="gnavi pc-on">
     <div class="gnavi__wrapper">
       <ul class="gnavi__block" id="menu">
-        <li class="gnavi__item top"><a href="/">トップ</a></li>
+        <li class="gnavi__item top"><a href="/"></a></li>
         <li class="gnavi__item about about_history about_keidai">金剛寺について
           <ul class="child child--wide">
             <div class="gnavi__subitem">
@@ -90,6 +81,9 @@ endif;
             <?php endforeach ; } ?>
           </ul>
         </li>
+        <li class="gnavi__item funeral">
+          <a href="/funeral/">葬儀</a>
+        </li>
         <li class="gnavi__item kuyou">供養
           <ul class="child">
             <?php if(isset($gnavis["kuyou"])) { foreach ($gnavis["kuyou"] as $gnavi) : ?>
@@ -105,6 +99,8 @@ endif;
           </ul>
         </li>
         <li class="gnavi__item gnavi__item-last event"><a href="/event.html">行事</a></li>
+        <li class="gnavi__item gnavi__item-last accessNav"><a href="/access.html">交通案内</a></li>
+        <li class="gnavi__item gnavi__item-last contactNav"><a href="/contact.html">お問い合わせ</a></li>
       </ul>
     </div>
   </nav>

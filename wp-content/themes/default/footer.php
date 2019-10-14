@@ -25,7 +25,7 @@ endif;
    
     <div class="wrap">
       <div class="footer__info">
-        <div class="footer__logo"><img src="/assets/img/sp/logo_footer.png" alt=""></div>
+        <div class="footer__logo"><a href="/"><img src="/assets/img/sp/logo_footer.png" alt=""></a></div>
         <div class="footer__text">
           <p class="">〒061-0600</p>
           <p>北海道樺戸郡浦臼町字キナウスナイ196-31</p>
