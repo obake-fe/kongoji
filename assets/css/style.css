@@ -1170,6 +1170,17 @@ img {
   width: 100%;
 }
 
+/* SPメニューいったん消しておく */
+@media (max-width: 767px) {
+  .header{
+    display: none;
+  }
+  .gnavi.sp-on{
+    display: none;
+  }
+
+}
+
 
 /* topヘッダー */
 body#top{
