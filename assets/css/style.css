@@ -1166,8 +1166,23 @@ img {
   width: 100%;
 }
 
-.keyvisual img {
+.keyvisualItem {
   width: 100%;
+  height: 420px;
+  background-size: cover;
+  background-position: center;
+}
+.keyvisualItem.img01{
+  background-image: url(http://kongoji.local/wp-content/uploads/2019/10/kv1.png);
+}
+.keyvisualItem.img02{
+  background-image: url(http://kongoji.local/wp-content/uploads/2019/10/kv2.png);
+}
+.keyvisualItem.img03{
+  background-image: url(http://kongoji.local/wp-content/uploads/2019/10/kv3.png);
+}
+.keyvisualItem.img04{
+  background-image: url(http://kongoji.local/wp-content/uploads/2019/10/kv4.png);
 }
 
 /* SPメニューいったん消しておく */
@@ -1199,17 +1214,14 @@ body#top{
 #top .bx-wrapper{
   min-height: 420px;
 }
-#top .bx-wrapper img{
-  height: 100%;
-}
-#top .keyvisual a{
-  height: 420px;
-}
 #top .gnavi__item{
   border: none;
 }
 #top .gnavi__item.top{
   display: none;
+}
+#top .gnavi__item.about_history{
+  margin-left: 0;
 }
 .gnavi__item.topImg{
   width: 44px;
@@ -1339,6 +1351,11 @@ body#top{
 
 .photo__item:last-of-type {
   margin-right: 0;
+}
+
+.photo__item img {
+  width: 240px;
+  height: 140px;
 }
 
 .footer__upper {
@@ -1738,8 +1755,13 @@ body#top{
     width: 100%;
   }
 
-  .keyvisual img {
+  .keyvisualItem {
     width: 100%;
+    height: 300px;
+  }
+
+  #top .bx-wrapper{
+    min-height: 300px;
   }
 
   .news {
@@ -1853,6 +1875,7 @@ body#top{
 
   .photo__item img {
     width: 100%;
+    height: auto;
   }
 
   .photo__item:last-of-type {

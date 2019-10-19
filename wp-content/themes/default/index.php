@@ -70,7 +70,7 @@
         <div class="top__form__img"></div>
         <p class="top__form__text">お気軽に問い合わせください。<br class="only-PC">お電話でのお問い合わせも受け付けております。</p>
         <div class="top__form__linkWrap">
-          <a class="top__form__link" href="/access.html">お電話にて問い合わせる</a>
+          <a class="top__form__link sp-on" href="tel:0125682202">お電話にて問い合わせる</a>
         </div>
       </div>
       <?php if (count($errormsgs)) { ?>

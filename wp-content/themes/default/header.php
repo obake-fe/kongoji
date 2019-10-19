@@ -112,11 +112,11 @@ endif;
 <div class="contents">
 <?php if (isset($mypagename) && $mypagename == "top") { ?> 
   <div>
-    <ul class="keyvisual ">
-      <li><a href="/?p=157" class="pc-on"><img src="/assets/img/top/kv1.png" alt=""></a><a href="/?p=157" class="sp-on"><img src="/assets/img/sp/kv1.png" alt=""></a></li>
-      <li><a href="/?p=141" class="pc-on"><img src="/assets/img/top/kv2.png" alt=""></a><a href="/?p=141" class="sp-on"><img src="/assets/img/sp/kv2.png" alt=""></a></li>
-      <li><a href="/?p=105" class="pc-on"><img src="/assets/img/top/kv3.png" alt=""></a><a href="/?p=105" class="sp-on"><img src="/assets/img/sp/kv3.png" alt=""></a></li>
-      <li><a href="/?p=73" class="pc-on"><img src="/assets/img/top/kv4.png" alt=""></a><a href="/?p=73" class="sp-on"><img src="/assets/img/sp/kv4.png" alt=""></a></li>
+    <ul class="keyvisual">
+      <li class="keyvisualItem img01"></li>
+      <li class="keyvisualItem img02"></li>
+      <li class="keyvisualItem img03"></li>
+      <li class="keyvisualItem img04"></li>
     </ul>
   </div>
 
