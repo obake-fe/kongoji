@@ -5,7 +5,7 @@
 <?php $description = "樺戸山金剛寺は北海道・浦臼町にある高野山真言宗のお寺です。空知周辺（樺戸郡、岩見沢市、砂川市、滝川市等）および札幌市、旭川市などから参拝頂けます。先祖供養、永代供養、厄除け・厄払いなど祈祷祈願を執り行います。";?>
 <?php get_header(); ?>
   <div class="news__title sp-on">
-    <a href=""><img src="http://kongoji.local/wp-content/uploads/2019/10/top_news_SP.png" alt=""></a>
+    <img src="https://kongoji.or.jp/wp-content/uploads/2019/10/top_news_SP.png" alt="">
   </div>
   <section class="news">
     <div class="wrap">
@@ -31,7 +31,7 @@
         <p class="news__more"><a href="/news.html">もっと見る</a></p>
       </div>
       <div class="news__title pc-on">
-        <img src="http://kongoji.local/wp-content/uploads/2019/10/top_news_PC.png" alt="">
+        <img src="https://kongoji.or.jp/wp-content/uploads/2019/10/top_news_PC.png" alt="">
       </div>
     </div>
   </section>

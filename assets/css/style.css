@@ -1173,16 +1173,16 @@ img {
   background-position: center;
 }
 .keyvisualItem.img01{
-  background-image: url(http://kongoji.local/wp-content/uploads/2019/10/kv1.png);
+  background-image: url(https://kongoji.or.jp/wp-content/uploads/2019/10/kv1.png);
 }
 .keyvisualItem.img02{
-  background-image: url(http://kongoji.local/wp-content/uploads/2019/10/kv2.png);
+  background-image: url(https://kongoji.or.jp/wp-content/uploads/2019/10/kv2.png);
 }
 .keyvisualItem.img03{
-  background-image: url(http://kongoji.local/wp-content/uploads/2019/10/kv3.png);
+  background-image: url(https://kongoji.or.jp/wp-content/uploads/2019/10/kv3.png);
 }
 .keyvisualItem.img04{
-  background-image: url(http://kongoji.local/wp-content/uploads/2019/10/kv4.png);
+  background-image: url(https://kongoji.or.jp/wp-content/uploads/2019/10/kv4.png);
 }
 
 /* SPメニューいったん消しておく */
@@ -1226,7 +1226,7 @@ body#top{
 .gnavi__item.topImg{
   width: 44px;
   height: 294px;
-  background: url(http://kongoji.local/wp-content/uploads/2019/10/top_mv_logo_PC.png);
+  background: url(https://kongoji.or.jp/wp-content/uploads/2019/10/top_mv_logo_PC.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -2128,7 +2128,7 @@ a.top__access__link {
 .top__access__img{
   width: 263px;
   height: 71px;
-  background-image: url(http://kongoji.local/wp-content/uploads/2019/10/top_accessNews_PC.png);
+  background-image: url(https://kongoji.or.jp/wp-content/uploads/2019/10/top_accessNews_PC.png);
   background-size: contain;
 }
 
@@ -2141,7 +2141,7 @@ a.top__access__link {
   .top__access__img{
     width: 174px;
     height: 39px;
-    background-image: url(http://kongoji.local/wp-content/uploads/2019/10/top_accessNews_SP.png);
+    background-image: url(https://kongoji.or.jp/wp-content/uploads/2019/10/top_accessNews_SP.png);
     transform: translateY(-50%);
   }
   .top__access__textWrap {
@@ -2217,7 +2217,7 @@ a.top__form__link {
 .top__form__img{
   width: 263px;
   height: 71px;
-  background-image: url(http://kongoji.local/wp-content/uploads/2019/10/top_contactNews_PC.png);
+  background-image: url(https://kongoji.or.jp/wp-content/uploads/2019/10/top_contactNews_PC.png);
   background-size: contain;
 }
 .contactForm__head.topForm{
@@ -2327,7 +2327,7 @@ a.top__form__link {
   .top__form__img{
     width: 173px;
     height: 39px;
-    background-image: url(http://kongoji.local/wp-content/uploads/2019/10/top_contactNews_SP.png);
+    background-image: url(https://kongoji.or.jp/wp-content/uploads/2019/10/top_contactNews_SP.png);
     transform: translateY(-50%);
   }
   .top__form__textWrap{
