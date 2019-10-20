@@ -93,6 +93,14 @@ $(function(){
 
   var id = $("body").attr("id");
   $(".gnavi__wrapper ul li."+id).addClass("current");
+
+  // mvアニメーション
+  var $mvTtl = $(".js-mv__ttl");
+  var $mvSubTtl = $(".js-mv__subTtl");
+  $(window).on('load', function(){
+    $mvTtl.addClass('active');
+    $mvSubTtl.addClass('active');
+  });
 });
 
 </script>

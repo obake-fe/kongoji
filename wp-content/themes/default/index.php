@@ -31,7 +31,7 @@
         <p class="news__more"><a href="/news.html">もっと見る</a></p>
       </div>
       <div class="news__title pc-on">
-        <a href="/news.html"><img src="http://kongoji.local/wp-content/uploads/2019/10/top_news_PC.png" alt=""></a>
+        <img src="http://kongoji.local/wp-content/uploads/2019/10/top_news_PC.png" alt="">
       </div>
     </div>
   </section>
