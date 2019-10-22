@@ -933,7 +933,7 @@ img {
 }
 
 .sp-on {
-  display: none;
+  display: none !important;
 }
 
 .wrap {
@@ -1561,7 +1561,7 @@ body#top{
   }
 
   .sp-on {
-    display: inline-block;
+    display: inline-block !important;
   }
 
   .wrap {
@@ -2505,5 +2505,54 @@ a.top__form__link {
   }
   .gnavi__item.top a{
     text-indent: 0;
+  }
+}
+
+/* バナーセクション */
+.banner{
+  background-color: #fbfaf5;
+}
+.banner__inner{
+  display: flex;
+  width: 980px;
+  margin: 0 auto;
+  padding: 64px 0;
+}
+.banner__content {
+  width: 483px;
+  height: 211px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.banner__content+.banner__content {
+  margin-left: 18px;
+}
+.banner__content.kuyouBanner{
+  background-image: url(https://kongoji.or.jp/wp-content/uploads/2019/10/Banner_02.png);
+}
+.banner__content.funeralBanner{
+  background-image: url(https://kongoji.or.jp/wp-content/uploads/2019/10/Banner_01.png);
+}
+.banner__content.ossuaryBanner{
+  background-image: url(https://kongoji.or.jp/wp-content/uploads/2019/10/Banner_03.png);
+}
+
+@media (max-width: 767px) {
+  .banner__inner{
+    display: block;
+    width: auto;
+    padding: 40px 0;
+    margin: 0 24px;
+  }
+  .banner__content {
+    display: block;
+    width: auto;
+    height: 144px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .banner__content+.banner__content {
+    margin: 16px 0 0;
   }
 }
