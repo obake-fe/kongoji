@@ -44,9 +44,9 @@ endif;
 </head>
 <body id="<?php echo $mypagename;?>">
 
-<header class="header">
+<div class="header__top__icon js-hamburger__bottun"></div>
+<header class="header js-headerMenu">
   <div class="header__top">
-
     <div class="header__sns">
         <a href="https://www.facebook.com/kongohji/" target="_blank"><img src="/assets/img/sp/icon_fb.png" alt=""></a>
         <a href="https://www.instagram.com/kongoji_hokkaido/" target="_blank"><img src="/assets/img/sp/icon_in.png" alt=""></a>
@@ -54,10 +54,10 @@ endif;
     </div>
 
   </div>
-  <nav class="gnavi pc-on">
+  <nav class="gnavi">
     <div class="gnavi__wrapper">
       <ul class="gnavi__block" id="menu">
-        <li class="gnavi__item top"><a href="/"></a></li>
+        <li class="gnavi__item top"><a href="/">トップ</a></li>
         <li class="gnavi__item about about_history about_keidai">金剛寺について
           <ul class="child">
             <?php if(isset($gnavis["about_history"])) { foreach ($gnavis["about_history"] as $gnavi) : ?>
@@ -105,6 +105,7 @@ endif;
 
 <div class="contents">
 <?php if (isset($mypagename) && $mypagename == "top") { ?> 
+  <div class="top__mv__sp"></div>
   <div>
     <ul class="keyvisual">
       <li class="keyvisualItem img01"></li>
@@ -115,49 +116,3 @@ endif;
   </div>
 
 <?php } ?> 
-
-  <nav class="gnavi sp-on">
-    <div class="gnavi__wrapper">
-      <ul class="gnavi__block" id="menu">
-        <li class="gnavi__item gnavi__item-bb top"><a href="/">トップ</a></li>
-        <li class="gnavi__item gnavi__item-bb about">金剛寺について
-          <ul class="child child--wide">
-            <div class="gnavi__subitem">
-              <ul>
-                <li>歴史</li>
-                <li>境内の案内</li>
-              </ul>
-            </div>
-            <?php if(isset($gnavis["about_history"])) { foreach ($gnavis["about_history"] as $gnavi) : ?>
-            <li><a href="<?php echo $gnavi['url'];?>"><?php echo $gnavi["title"];?></a></li>
-            <?php endforeach ; } ?>
-            <?php if(isset($gnavis["about_keidai"])) { foreach ($gnavis["about_keidai"] as $gnavi) : ?>
-            <li><a href="<?php echo $gnavi['url'];?>"><?php echo $gnavi["title"];?></a></li>
-            <?php endforeach ; } ?>
-          </ul>
-        </li>
-        <li class="gnavi__item gnavi__item-bb prayer">祈祷祈願
-          <ul class="child">
-            <?php if(isset($gnavis["kitoukigan"])) { foreach ($gnavis["kitoukigan"] as $gnavi) : ?>
-            <li><a href="<?php echo $gnavi['url'];?>"><?php echo $gnavi["title"];?></a></li>
-            <?php endforeach ; } ?>
-          </ul>
-        </li>
-        <li class="gnavi__item memorial-service">供養
-          <ul class="child">
-            <?php if(isset($gnavis["kuyou"])) { foreach ($gnavis["kuyou"] as $gnavi) : ?>
-            <li><a href="<?php echo $gnavi['url'];?>"><?php echo $gnavi["title"];?></a></li>
-            <?php endforeach ; } ?>
-          </ul>
-        </li>
-        <li class="gnavi__item experience">体験
-          <ul class="child">
-            <?php if(isset($gnavis["taiken"])) { foreach ($gnavis["taiken"] as $gnavi) : ?>
-            <li><a href="<?php echo $gnavi['url'];?>"><?php echo $gnavi["title"];?></a></li>
-            <?php endforeach ; } ?>
-          </ul>
-        </li>
-        <li class="gnavi__item gnavi__item-last event"><a href="/event.html">行事</a></li>
-      </ul>
-    </div>
-  </nav>

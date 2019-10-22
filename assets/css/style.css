@@ -161,6 +161,7 @@
 
 @media (max-width: 767px) {
   .contents {
+    position: relative;
     font-size: 30px;
   }
 
@@ -353,7 +354,7 @@
 .contactForm__head {
   width: 320px;
   color: #8a7959;
-  padding-left: 40px;
+  padding-left: 20px;
   background-color: #ede4ce;
   border-bottom: 1px solid #fff;
 }
@@ -378,16 +379,18 @@
 
 .contactForm__body .exam {
   line-height: 2.5;
+  color: #444;
 }
 
 .contactForm__label {
   vertical-align: middle;
   margin-right: 10px;
+  color: #444;
 }
 
 .contactForm__textarea {
   margin-right: 10px;
-  height: 30px;
+  height: 44px;
   width: 220px;
   border: 1px solid #897858;
   font-family: meiryo;
@@ -464,6 +467,10 @@
   border: none;
 }
 
+.sendBtn input:hover{
+  background-color: #C1AB04;
+}
+
 .return__vol2 {
   clear: both;
   text-align: center;
@@ -516,6 +523,7 @@
   }
 
   .contactForm__text {
+    color: #444;
     font-size: 16px;
     padding: 6px 0 10px 0;
   }
@@ -913,7 +921,7 @@ a:hover {
 }
 
 a:hover img:not(.ov) {
-  opacity: 0.7;
+  opacity: .5;
 }
 
 img {
@@ -929,7 +937,7 @@ img {
 }
 
 .wrap {
-  width: 1012px;
+  width: 999px;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -941,7 +949,7 @@ img {
 
 .header__top {
   position: relative;
-  width: 1012px;
+  width: 999px;
   margin: 0 auto;
   padding: 40px 0 19px;
   overflow: hidden;
@@ -1039,7 +1047,7 @@ img {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  width: 1012px;
+  width: 999px;
   margin: 0 auto;
 }
 
@@ -1085,12 +1093,16 @@ img {
 }
 .gnavi__item.top a{
   height: 50px;
+  text-indent: -9999px;
 }
 .gnavi__item.contactNav{
   width: 133px;
   height: 35px;
   line-height: 35px;
   background-color: #897858;
+}
+.gnavi__item.contactNav:hover{
+  background-color: #c1ab04;
 }
 .gnavi__item.contactNav a{
   color: #fff;
@@ -1187,17 +1199,6 @@ img {
   background-image: url(https://kongoji.or.jp/wp-content/uploads/2019/10/kv4.png);
 }
 
-/* SPメニューいったん消しておく */
-@media (max-width: 767px) {
-  .header{
-    display: none;
-  }
-  .gnavi.sp-on{
-    display: none;
-  }
-
-}
-
 
 /* topヘッダー */
 body#top{
@@ -1229,6 +1230,7 @@ body#top{
 .gnavi__item.topImg{
   width: 44px;
   height: 294px;
+  margin-top: 11px;
   background: url(https://kongoji.or.jp/wp-content/uploads/2019/10/top_mv_logo_PC.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -1257,7 +1259,7 @@ body#top{
 
 .news__block:last-of-type {
   border-bottom: none;
-  padding-bottom: 16px;
+  padding-bottom: 0;
 }
 
 .news__list {
@@ -1321,6 +1323,9 @@ body#top{
   right: -10px;
   transform: translateY(-50%) rotate(45deg);
 }
+.news__more a:hover::after {
+  border-top: 7px solid #3D3627;
+}
 
 .news__more a {
   color: #c1ab04;
@@ -1330,6 +1335,7 @@ body#top{
 
 .news__more a:hover {
   text-decoration: none;
+  color: #3D3627;
 }
 
 .photo {
@@ -1352,6 +1358,9 @@ body#top{
   float: left;
 }
 
+.photo__item:nth-of-type(4n) {
+  margin-right: 0;
+}
 .photo__item:last-of-type {
   margin-right: 0;
 }
@@ -1364,7 +1373,7 @@ body#top{
 .footer__upper {
   background-color: #f7f6f0;
   overflow: hidden;
-  padding: 59px 0 58px;
+  padding: 56px 0 50px;
 }
 
 .footer .wrap {
@@ -1373,7 +1382,7 @@ body#top{
 
 .footer__info {
   display: flex;
-  width: 1012px;
+  width: 999px;
   margin: 0 auto;
 }
 
@@ -1567,14 +1576,16 @@ body#top{
   }
 
   .header__sns {
-    top: 22px;
-    right: 5px;
+    position: static;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
   }
 
   .header__top {
     width: auto;
     margin: 0 auto;
-    padding: 5px 0;
+    padding: 20px 0;
     height: 70px;
   }
 
@@ -1594,15 +1605,17 @@ body#top{
 
   .gnavi {
     margin-bottom: 0;
+    height: 100%;
   }
 
   .gnavi__wrapper {
-    background-color: #ede4ce;
     border-bottom: none;
+    height: 100%;
   }
 
   .gnavi__block {
     width: auto;
+    height: 100%;
     margin: 0 auto;
     border-bottom: 1px solid #fff;
   }
@@ -1613,10 +1626,11 @@ body#top{
 
   .gnavi__item {
     display: block;
-    float: left;
+    float: none;
     border-left: none;
     border-right: 1px solid #fff;
     width: 33%;
+    color: #fff;
   }
 
   .gnavi__item img {
@@ -1627,22 +1641,14 @@ body#top{
     border-right: none;
   }
 
-  #top .gnavi__wrapper {
-    margin-top: 40px;
-  }
 
   .gnavi {
     width: 100%;
   }
 
-  .gnavi__wrapper {
-    width: auto;
-    background-color: #ede4ce;
-    border-bottom: none;
-    height: 82px;
-  }
 
   .gnavi__block {
+    display: block;
     width: 100%;
     margin: 0 auto;
   }
@@ -1654,8 +1660,8 @@ body#top{
 
   .gnavi__item {
     display: block;
-    float: left;
-    width: calc(100% / 3);
+    float: none;
+    width: 100%;
     height: 40px;
     line-height: 40px;
     border-left: none;
@@ -1671,11 +1677,11 @@ body#top{
     height: 40px;
   }
 
-  .gnavi__item:hover {
+  /* .gnavi__item:hover {
     background-color: #897858;
     border-bottom: none;
     color: #fff;
-  }
+  } */
 
   .gnavi .current {
     background-color: #897858;
@@ -1725,7 +1731,7 @@ body#top{
   }
 
   .gnavi ul.child {
-    display: none;
+    display: block;
     position: absolute;
     left: 0;
     padding: 0;
@@ -1788,7 +1794,7 @@ body#top{
 
   .news__block:last-of-type {
     border-bottom: none;
-    padding-bottom: 15px;
+    padding-bottom: 0;
   }
 
   .news__list {
@@ -1819,6 +1825,9 @@ body#top{
     margin-bottom: 10px;
     line-height: 22px;
   }
+  .news__text a{
+    font-size: 14px;
+  }
 
   .news__newicon {
     color: #e95295;
@@ -1830,6 +1839,7 @@ body#top{
     position: relative;
     top: 22px;
     width: 36%;
+    margin-top: 24px;
     z-index: 10;
   }
 
@@ -1856,7 +1866,7 @@ body#top{
   }
 
   .photo {
-    padding: 15px 10px 29px;
+    padding: 24px 12px 8px;
     margin: 0 auto;
   }
 
@@ -1919,6 +1929,9 @@ body#top{
   .footer__logo {
     overflow: hidden;
   }
+  .footer__logo a {
+    margin: 0 auto;
+  }
 
   .footer__logo img {
     float: none;
@@ -1929,7 +1942,7 @@ body#top{
 
   .footer__text {
     color: #897858;
-    margin: 0 auto 8px;
+    margin: 0 0 8px 16px;
     width: 276px;
   }
 
@@ -2083,7 +2096,7 @@ body#top{
 
 .top__access__inner {
   position: relative;
-  width: 1012px;
+  width: 999px;
   margin: 0 auto;
   padding: 0 0 64px;
 }
@@ -2098,10 +2111,11 @@ body#top{
   display: flex;
   align-items: flex-end;
   width: 352px;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 500;
   font-family: "Sawarabi Gothic";
   line-height: 1.7;
+  margin-right: 72px;
 }
 
 .top__access__linkWrap {
@@ -2119,6 +2133,10 @@ a.top__access__link {
   text-decoration: none;
 }
 
+a.top__access__link:hover {
+  color: #3D3627;
+}
+
 .top__access__link::after {
   content: '';
   position: absolute;
@@ -2128,6 +2146,11 @@ a.top__access__link {
   right: -10px;
   transform: translateY(-50%) rotate(45deg);
 }
+
+.top__access__link:hover::after {
+  border-top: 7px solid #3D3627;
+}
+
 .top__access__img{
   width: 263px;
   height: 71px;
@@ -2138,8 +2161,7 @@ a.top__access__link {
 @media (max-width: 767px) {
   .top__access__inner {
     width: auto;
-    margin: 0 24px;
-    /* padding: 40px 0 3px; */
+    padding-bottom: 60px;
   }
   .top__access__img{
     width: 174px;
@@ -2154,17 +2176,21 @@ a.top__access__link {
 
   .top__access__text {
     width: auto;
-    font-size: 15px;
+    font-size: 14px;
+    padding: 0 12px;
+    margin-right: 0;
   }
 
   .top__access__linkWrap {
     display: block;
     text-align: right;
     margin-top: 16px;
+    padding: 0 12px;
   }
 
   .map {
-    height: 246px;
+    height: 226px;
+    padding: 0 12px;
     vertical-align: bottom;
   }
 }
@@ -2172,7 +2198,7 @@ a.top__access__link {
 
 /* フォーム */
 .top__form__inner{
-  width: 1012px;
+  width: 999px;
   margin: 0 auto;
   padding: 64px 0;
 }
@@ -2184,13 +2210,13 @@ a.top__access__link {
 
 .top__form__text {
   display: flex;
-  align-items: flex-end;
   width: 352px;
   color: #444444;
   font-size: 15px;
   font-weight: 500;
   font-family: "Sawarabi Gothic";
   line-height: 1.5;
+  margin-right: 272px;
 }
 
 .top__form__linkWrap {
@@ -2232,22 +2258,22 @@ a.top__form__link {
   margin-right: 16px;
 }
 .topFormHalf{
-  margin-right: 74px;
+  margin-right: 56px;
 }
 .contactForm__body.topForm{
-  width: 660px;
-  padding: 8px 0 8px 20px;
+  width: 649px;
+  padding: 8px 0 8px 32px;
   border: none;
 }
 .contactForm__textarea.topForm{
   height: 44px;
 }
 .contactForm__textarea.topFormName{
-  width: 255px;
+  width: 252px;
   margin-right: 0;
 }
 .contactForm__textarea.topFormKana{
-  width: 240px;
+  width: 237px;
   margin-right: 0;
 }
 .contactForm__textarea.topFormMail{
@@ -2279,7 +2305,8 @@ a.top__form__link {
   content:'';
   border-top: 8px solid #fff;
   border-right: 8px solid transparent;
-  left: 0;
+  top: -1px;
+  left: -1px;
   z-index: 1;
 }
 .sendBtn.topForm::after{
@@ -2287,8 +2314,8 @@ a.top__form__link {
   content:'';
   border-top: 8px solid #fff;
   border-left: 8px solid transparent;
-  top: 0;
-  right: 0;
+  top: -1px;
+  right: -1px;
 }
 .sendBtn__input.topForm{
   position: relative;
@@ -2305,8 +2332,8 @@ a.top__form__link {
   position: absolute;
   border-bottom: 8px solid #fff;
   border-right: 8px solid transparent;
-  bottom: 0;
-  left: 0;
+  bottom: -1px;
+  left: -1px;
   z-index: 1;
 }
 .sendBtn__inner::after{
@@ -2314,8 +2341,8 @@ a.top__form__link {
   position: absolute;
   border-bottom: 8px solid #fff;
   border-left: 8px solid transparent;
-  bottom: 0;
-  right: 0;
+  bottom: -1px;
+  right: -1px;
   z-index: 1;
 }
 
@@ -2325,7 +2352,7 @@ a.top__form__link {
   }
   .top__form__inner{
     width: auto;
-    padding: 0;
+    padding: 0 0 32px;
   }
   .top__form__img{
     width: 173px;
@@ -2340,7 +2367,8 @@ a.top__form__link {
   .top__form__text{
     font-size: 14px;
     line-height: 1.5;
-    margin-bottom: 10px;
+    margin: 0 0 10px 0;
+    padding-left: 12px;
     width: auto;
   }
   .top__form__linkWrap{
@@ -2352,7 +2380,7 @@ a.top__form__link {
   }
   .contactForm__body.topForm{
     width: 100%;
-    padding: 8px 16px 8px 20px;
+    padding: 16px 16px 8px 20px;
     border: none;
   }
   .contactForm__textarea.topForm{
@@ -2385,5 +2413,97 @@ a.top__form__link {
   }
   .top__contactForm__txt{
     margin-left: 10px;
+  }
+  .sendBtn.topForm {
+    margin-top: 8px;
+  }
+}
+
+/* SPハンバーガー */
+.top__mv__sp {
+  display: none;
+}
+.header__top__icon{
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .header {
+    display: none;
+  }
+  #top .gnavi__item.top{
+    display: block;
+    background-image: none;
+    margin-right: 0;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+  }
+  #top .header.open {
+    display: block;
+    width: 61.5%;
+    height: 100vh;
+    right: 0vw;
+    left: auto;
+    transform: translateX(0);
+    background-color: #897858;
+    z-index: 10;
+  }
+  #top .header__sns {
+    top: 20px;
+  }
+
+  .header__sns a:first-of-type{
+    margin-left: 0;
+  }
+
+  .top__mv__sp{
+    display: block;
+    position: absolute;
+    z-index: 1;
+    width: 32px;
+    height: 190px;
+    right: 0;
+    left: 0;
+    top: 55px;
+    margin: auto;
+    background-image: url(https://kongoji.or.jp/wp-content/uploads/2019/10/top_mv_logo_PC.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .header__top__icon{
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 18px;
+    height: 12px;
+    background-image: url(https://kongoji.or.jp/wp-content/uploads/2019/10/open.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 2;
+  }
+  .header__top__icon.open{
+    position: absolute;
+    right: calc(61.5% + 20px);
+    top: 20px;
+    width: 14px;
+    height: 14px;
+    background-image: url(https://kongoji.or.jp/wp-content/uploads/2019/10/close.png);
+  }
+
+  .gnavi__item.topImg {
+    display: none;
+    margin-top: 0;
+  }
+  .gnavi__item+.gnavi__item{
+    margin: 0;
+  }
+  .gnavi__item.top a{
+    text-indent: 0;
   }
 }

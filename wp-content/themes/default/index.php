@@ -11,7 +11,7 @@
     <div class="wrap">
       <div class="news__box">
         <ul class="news__block">
-<?php $loop = new WP_Query( array( 'post_type' => 'post', 'posts_per_page' => 5 ) ); ?>
+<?php $loop = new WP_Query( array( 'post_type' => 'post', 'posts_per_page' => 3 ) ); ?>
 <?php if ($loop->have_posts()): ?>
  <?php while ( $loop->have_posts() ) : $loop->the_post();
  $post = get_post( $post );
@@ -61,14 +61,14 @@
           <a class="top__access__link" href="/access.html">交通手段ごとのアクセス情報</a>
         </div>
       </div>
-      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2896.591545203427!2d141.8312713154911!3d43.44824597912888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b5faa09406aeb%3A0x54276a82ffe5ae06!2z6auY6YeO5bGx55yf6KiA5a6XIOaouuaIuOWxsSDph5HliZvlr7o!5e0!3m2!1sja!2sjp!4v1569739828599!5m2!1sja!2sjp" width="100%" height="390" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2896.591545203427!2d141.8312713154911!3d43.44824597912888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b5faa09406aeb%3A0x54276a82ffe5ae06!2z6auY6YeO5bGx55yf6KiA5a6XIOaouuaIuOWxsSDph5HliZvlr7o!5e0!3m2!1sja!2sjp!4v1569739828599!5m2!1sja!2sjp" width="100%" height="398" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
     </div>
   </section>
   <section>
     <div class="top__form__inner">
       <div class="top__form__textWrap">
         <div class="top__form__img"></div>
-        <p class="top__form__text">お気軽に問い合わせください。<br class="only-PC">お電話でのお問い合わせも受け付けております。</p>
+        <p class="top__form__text">お気軽に問い合わせください。<br>お電話でのお問い合わせも受け付けております。</p>
         <div class="top__form__linkWrap">
           <a class="top__form__link sp-on" href="tel:0125682202">お電話にて問い合わせる</a>
         </div>

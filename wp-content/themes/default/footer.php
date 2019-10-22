@@ -101,6 +101,14 @@ $(function(){
     $mvTtl.addClass('active');
     $mvSubTtl.addClass('active');
   });
+
+  // ハンバーガーメニュー
+  var $hamButtun = $(".js-hamburger__bottun");
+  var $headerMenu = $(".js-headerMenu");
+  $hamButtun.on('click', function() {
+    $hamButtun.toggleClass('open');
+    $headerMenu.toggleClass('open');
+  })
 });
 
 </script>
