@@ -59,13 +59,7 @@ endif;
       <ul class="gnavi__block" id="menu">
         <li class="gnavi__item top"><a href="/"></a></li>
         <li class="gnavi__item about about_history about_keidai">金剛寺について
-          <ul class="child child--wide">
-            <div class="gnavi__subitem">
-              <ul>
-                <li>歴史</li>
-                <li>境内の案内</li>
-              </ul>
-            </div>
+          <ul class="child">
             <?php if(isset($gnavis["about_history"])) { foreach ($gnavis["about_history"] as $gnavi) : ?>
             <li><a href="<?php echo $gnavi['url'];?>"><?php echo $gnavi["title"];?></a></li>
             <?php endforeach ; } ?>
