@@ -43,9 +43,11 @@ endif;
 </script>
 </head>
 <body id="<?php echo $mypagename;?>">
-
+<div class="header__top__fixed">
+  <a class="header__top__fixed__img" href="/"></a>
+</div>
 <div class="header__top__icon js-hamburger__bottun"></div>
-<header class="header js-headerMenu">
+<header class="header">
   <div class="header__top">
     <div class="header__sns">
         <a href="https://www.facebook.com/kongohji/" target="_blank"><img src="/assets/img/sp/icon_fb.png" alt=""></a>

@@ -164,6 +164,13 @@
     position: relative;
     font-size: 30px;
   }
+  div.contents {
+    padding-top: 53px;
+  }
+  #top div.contents,
+  #funeral div.contents {
+    padding-top: 0;
+  }
 
   .contents__title {
     font-size: 24px;
@@ -1074,7 +1081,7 @@ img {
   display: inline-block;
   width: 100%;
   height: 40px;
-  font-family: "Sawarabi Mincho"
+  font-family: "Sawarabi Mincho";
 }
 
 /* .gnavi__item:hover {
@@ -1573,6 +1580,7 @@ body#top{
   .header {
     width: auto;
     margin: 0 auto;
+    transition: all 0.5s;
   }
 
   .header__sns {
@@ -1580,13 +1588,17 @@ body#top{
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
+    width: 82px;
+  }
+  .header__sns img{
+    width: 14px;
   }
 
   .header__top {
     width: auto;
     margin: 0 auto;
-    padding: 20px 0;
-    height: 70px;
+    padding: 15px 0 0;
+    height: auto;
   }
 
   .header__logo {
@@ -1617,6 +1629,7 @@ body#top{
     width: auto;
     height: 100%;
     margin: 0 auto;
+    padding-left: 20px;
     border-bottom: 1px solid #fff;
   }
 
@@ -1662,19 +1675,36 @@ body#top{
     display: block;
     float: none;
     width: 100%;
-    height: 40px;
-    line-height: 40px;
+    height: auto;
+    line-height: 48px;
     border-left: none;
     border-right: 1px solid #fff;
     text-align: center;
     position: relative;
     font-size: 13px;
+    text-align: left;
+  }
+
+  .gnavi__item+.gnavi__item{
+    border-top: 1px solid rgba(237, 228, 206, .2) !important;
   }
 
   .gnavi__item a {
     display: inline-block;
     width: 100%;
-    height: 40px;
+    height: auto;
+    line-height: 40px;
+    font-size: 12px;
+    color: #fff;
+  }
+  .gnavi__item.contactNav{
+    width: 100%;
+  }
+  .gnavi__item.contactNav a{
+    line-height: 48px;
+  }
+  .gnavi__item.contactNav:hover{
+    background: none;
   }
 
   /* .gnavi__item:hover {
@@ -1731,14 +1761,18 @@ body#top{
   }
 
   .gnavi ul.child {
-    display: block;
-    position: absolute;
+    position: relative;
     left: 0;
     padding: 0;
     width: 100%;
+    margin-top: -14px;
+    padding-left: 30px;
     line-height: 40px;
     background-color: #897858;
     z-index: 9999;
+  }
+  .gnavi ul.child li+li{
+    border-top: 1px solid rgba(237, 228, 206, .2);
   }
 
   .gnavi ul.child--wide {
@@ -1755,9 +1789,9 @@ body#top{
   .gnavi ul.child li a {
     display: block;
     color: #fff;
-    /* line-height: 40px; */
+    line-height: 34px;
     width: 100%;
-    font-size: 11px;
+    font-size: 10px;
   }
 
   .keyvisual {
@@ -2431,24 +2465,55 @@ a.top__form__link {
   .header {
     display: none;
   }
-  #top .gnavi__item.top{
-    display: block;
-    background-image: none;
-    margin-right: 0;
-    width: 100%;
-    height: 40px;
-    line-height: 40px;
-    color: #fff;
+  #funeral .header,
+  #funeral .header__top__fixed,
+  #funeral .header__top__icon {
+    display: none;
   }
-  #top .header.open {
+  .open .header {
     display: block;
+    position: fixed;
     width: 61.5%;
     height: 100vh;
     right: 0vw;
     left: auto;
     transform: translateX(0);
     background-color: #897858;
-    z-index: 10;
+    z-index: 11;
+    overflow-y: auto;
+  }
+  #top .gnavi__item.top{
+    display: block;
+    background-image: none;
+    margin-right: 0;
+    width: 100%;
+    height: 48px;
+    line-height: 48px;
+    color: #fff;
+  }
+  .gnavi__item.top{
+    display: block;
+    background-image: none;
+    margin-right: 0;
+    width: 100%;
+    height: 48px;
+    line-height: 48px;
+    color: #fff;
+  }
+  li.gnavi__item{
+    font-size: 12px;
+  }
+  #top.open .header {
+    display: block;
+    position: fixed;
+    width: 61.5%;
+    height: 100vh;
+    right: 0vw;
+    left: auto;
+    transform: translateX(0);
+    background-color: #897858;
+    z-index: 11;
+    overflow-y: auto;
   }
   #top .header__sns {
     top: 20px;
@@ -2476,7 +2541,7 @@ a.top__form__link {
 
   .header__top__icon{
     display: block;
-    position: absolute;
+    position: fixed;
     right: 20px;
     top: 20px;
     width: 18px;
@@ -2487,8 +2552,8 @@ a.top__form__link {
     background-repeat: no-repeat;
     z-index: 2;
   }
-  .header__top__icon.open{
-    position: absolute;
+  .open .header__top__icon{
+    position: fixed;
     right: calc(61.5% + 20px);
     top: 20px;
     width: 14px;
@@ -2505,6 +2570,33 @@ a.top__form__link {
   }
   .gnavi__item.top a{
     text-indent: 0;
+    font-size: 12px;
+    height: auto;
+    line-height: 40px;
+  }
+
+  .header__top__fixed {
+    height: 53px;
+    width: 100%;
+    position: fixed;
+    background-color: #fff;
+    z-index: 2;
+    box-shadow: 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
+  }
+  #top .header__top__fixed {
+    display: none;
+  }
+  .open .header__top__fixed {
+    display: none;
+  }
+  .header__top__fixed__img{
+    display: block;
+    margin: 10px 0 10px 16px;
+    width: 170px;
+    height: 33px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../../assets/img/sp/logo_header.png);
   }
 }
 

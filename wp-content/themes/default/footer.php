@@ -104,10 +104,16 @@ $(function(){
 
   // ハンバーガーメニュー
   var $hamButtun = $(".js-hamburger__bottun");
-  var $headerMenu = $(".js-headerMenu");
   $hamButtun.on('click', function() {
-    $hamButtun.toggleClass('open');
-    $headerMenu.toggleClass('open');
+    $('body').toggleClass('open');
+  })
+
+  $(window).on('scroll', function() {
+    if($(window).scrollTop() > 470) {
+      $('body').addClass('colorChange');
+    } else {
+      $('body').removeClass('colorChange');
+    }
   })
 });
 
