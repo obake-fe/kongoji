@@ -76,19 +76,12 @@ $(function(){
     minSlides: 2
   });
 
-    $('#menu li').hover(function(){
-        $("ul",this).show();
-    },
-    function(){
-        $("ul",this).hide();
-    });
-
-	$('#menuf li').hover(function(){
-        $("ul.child",this).show();
-    },
-    function(){
-        $("ul.child",this).hide();
-    });
+    // $('#menu li').hover(function(){
+    //     $("ul",this).show();
+    // },
+    // function(){
+    //     $("ul",this).hide();
+    // });
 
 
   var id = $("body").attr("id");

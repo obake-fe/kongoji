@@ -1073,6 +1073,9 @@ img {
   text-align: center;
   position: relative;
 }
+.gnavi__item:hover .child{
+  display: block;
+}
 .gnavi__item+.gnavi__item{
   margin-left: 24px;
 }
@@ -2502,7 +2505,11 @@ a.top__form__link {
   }
   li.gnavi__item{
     font-size: 12px;
+    border-right:none;
   }
+  /* li.gnavi__item:hover .child{
+    display: none;
+  } */
   #top.open .header {
     display: block;
     position: fixed;
@@ -2616,6 +2623,9 @@ a.top__form__link {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+}
+.banner__content:hover {
+  opacity: .5;
 }
 .banner__content+.banner__content {
   margin-left: 18px;
