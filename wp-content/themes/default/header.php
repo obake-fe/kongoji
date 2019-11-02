@@ -77,9 +77,6 @@ endif;
             <?php endforeach ; } ?>
           </ul>
         </li>
-        <li class="gnavi__item funeral">
-          <a href="/funeral/">葬儀</a>
-        </li>
         <li class="gnavi__item kuyou">供養
           <ul class="child">
             <?php if(isset($gnavis["kuyou"])) { foreach ($gnavis["kuyou"] as $gnavi) : ?>

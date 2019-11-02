@@ -1247,6 +1247,8 @@ body#top{
 }
 #top .gnavi__block{
   align-items: flex-start;
+  margin-left: 68px;
+  width: 931px;
 }
 
 .news {
@@ -2613,6 +2615,7 @@ a.top__form__link {
 }
 .banner__inner{
   display: flex;
+  justify-content: center;
   width: 980px;
   margin: 0 auto;
   padding: 64px 0;

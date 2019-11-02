@@ -74,7 +74,7 @@
 	font-family: Arial;
 	font-weight: bold;
 	color: #666;
-	margin: 0;
+	margin: 0 0 0 -12px;
 }
 
 .bx-wrapper .bx-pager .bx-pager-item,
@@ -224,5 +224,8 @@
 	.bx-wrapper .bx-next {
 		right: 25px;
 		background: url(../js/images/icon_r_arrow.png) no-repeat -16px;
+	}
+	.bx-wrapper .bx-pager{
+		margin: 0;
 	}
 }
