@@ -76,16 +76,32 @@ $(function(){
     minSlides: 2
   });
 
-    // $('#menu li').hover(function(){
-    //     $("ul",this).show();
-    // },
-    // function(){
-    //     $("ul",this).hide();
-    // });
 
+  // PCメニューホバー時にサブメニュー表示
+  $('#menu li').hover(function(){
+    var width = $(window).outerWidth(true)
+    if(width > 767) {
+      $("ul",this).show();
+    }
+  },
+  function(){
+    var width = $(window).outerWidth(true)
+    if(width > 767) {
+      $("ul",this).hide();
+    }
+  });
 
-  var id = $("body").attr("id");
-  $(".gnavi__wrapper ul li."+id).addClass("current");
+  // SPメニュークリック時にサブメニュー表示
+  $('#menu').children('li').click(function(){
+    var width = $(window).outerWidth(true)
+
+    if(width < 768) {
+      $("ul",this).slideToggle(200);
+      $('#menu li').not($(this)).children("ul",this).slideUp(200);
+    }
+
+  });
+
 
   // mvアニメーション
   var $mvTtl = $(".js-mv__ttl");

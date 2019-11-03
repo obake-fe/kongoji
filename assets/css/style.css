@@ -1073,9 +1073,9 @@ img {
   text-align: center;
   position: relative;
 }
-.gnavi__item:hover .child{
+/* .gnavi__item:hover .child{
   display: block;
-}
+} */
 .gnavi__item+.gnavi__item{
   margin-left: 24px;
 }
@@ -1117,19 +1117,6 @@ img {
 .gnavi__item.contactNav a{
   color: #fff;
   line-height: 35px;
-}
-
-/* .gnavi .current {
-  background-color: #897858;
-  color: #fff;
-} */
-
-/* .gnavi__item a:hover {
-  color: #fff;
-} */
-
-.gnavi .current a {
-  color: #fff;
 }
 
 .gnavi .gnavi__item-last {
@@ -1472,16 +1459,7 @@ body#top{
   color: #fff;
 }
 
-.footer .current {
-  background-color: #897858;
-  color: #fff;
-}
-
 .footer__link-item a:hover {
-  color: #fff;
-}
-
-.footer .current a {
   color: #fff;
 }
 
@@ -1658,7 +1636,10 @@ body#top{
   .gnavi__item:last-of-type {
     border-right: none;
   }
-
+  #top .gnavi__block{
+    margin-left: 0;
+    width: 100%;
+  }
 
   .gnavi {
     width: 100%;
@@ -1712,24 +1693,8 @@ body#top{
     background: none;
   }
 
-  /* .gnavi__item:hover {
-    background-color: #897858;
-    border-bottom: none;
-    color: #fff;
-  } */
-
-  .gnavi .current {
-    background-color: #897858;
-    color: #fff;
-  }
-
   .gnavi__item a:hover {
     color: #fff;
-  }
-
-  .gnavi .current a {
-    color: #fff;
-    width: 100%;
   }
 
   .gnavi .gnavi__item-bb {
